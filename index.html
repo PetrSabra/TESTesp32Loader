@@ -2,17 +2,20 @@
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
-    <title>Nahrání firmware do ESP32-C3</title>
+    <title>Flash ESP32-C3 přes USB</title>
     <script type="module" src="https://unpkg.com/esp-web-tools@9.1.0/dist/web/install-button.js?module"></script>
+    <style>
+      body { font-family: sans-serif; text-align: center; padding: 2em; }
+    </style>
   </head>
-  <body style="font-family: sans-serif; text-align: center; padding: 2em;">
-    <h1>Nahraj firmware do ESP32-C3</h1>
-    <p>Připoj zařízení k USB a klikni na tlačítko níže:</p>
+  <body>
+    <h1>ESP32-C3 Web Flash</h1>
+    <p>Připoj zařízení k USB a klikni níže pro nahrání firmware:</p>
 
     <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
 
     <p style="margin-top: 2em; font-size: 0.9em; color: #666;">
-      Pouze pro Chrome/Edge, musíš povolit přístup k sériovému portu.
+      Funguje v prohlížečích Chrome a Edge (desktop). Bez potřeby USB převodníku.
     </p>
   </body>
 </html>
